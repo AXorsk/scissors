@@ -13,9 +13,9 @@
 /* left position in % of the center of rotation */
 /* left position of the joint in % */
 body {
-		background-image: url("img.jpeg");
-		background-size: cover;
-		background-position: center center;
+	background-image: url("img.jpeg");
+	background-size: cover;
+	background-position: center center;
 }
 
 h1 {
