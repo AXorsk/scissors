@@ -13,129 +13,129 @@
 /* left position in % of the center of rotation */
 /* left position of the joint in % */
 body {
-    background-image: url("img.jpeg");
-    background-size: cover;
-    background-position: center center;
+		background-image: url("img.jpeg");
+		background-size: cover;
+		background-position: center center;
 }
 
 h1 {
-  color: purple;
-  text-align: center;
-  font-weight: 1000;
+	color: purple;
+	text-align: center;
+	font-weight: 1000;
 }
 
 .container {
-  width: 100%;
-  height: 100%;
-  position: relative;
+	width: 100%;
+	height: 100%;
+	position: relative;
 }
 
 .scissors {
-  position: relative;
-  width: 23em;
-  height: 7em;
-  margin: 7.5em auto;
+	position: relative;
+	width: 23em;
+	height: 7em;
+	margin: 7.5em auto;
 }
 
 .half {
-  width: 23em;
-  height: 4em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-  transform-origin: 46.52174% 100% 0;
-  transform: rotate(10deg);
-  animation: rot-up 0s ease-out infinite;
+	width: 23em;
+	height: 4em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	transform-origin: 46.52174% 100% 0;
+	transform: rotate(10deg);
+	animation: rot-up 0s ease-out infinite;
 }
 .half:nth-child(even) {
-  top: 3em;
-  transform-origin: 46.52174% 0% 0;
-  transform: rotate(-10deg);
-  animation: rot-down 0s ease-out infinite;
+	top: 3em;
+	transform-origin: 46.52174% 0% 0;
+	transform: rotate(-10deg);
+	animation: rot-down 0s ease-out infinite;
 }
 .half:nth-child(even) .blade {
-  top: 0;
-  border-radius: 0 1em 0 0;
+	top: 0;
+	border-radius: 0 1em 0 0;
 }
 .half:nth-child(even) .blade:after {
-  top: 1em;
-  border-style: solid;
-  border-width: 1em 2em 0 2em;
-  border-color: #bdc3c7 transparent transparent transparent;
+	top: 1em;
+	border-style: solid;
+	border-width: 1em 2em 0 2em;
+	border-color: #bdc3c7 transparent transparent transparent;
 }
 
 @keyframes rot-up {
-  0% {
-    transform: rotate(10deg);
-  }
-  50% {
-    transform: rotate(40deg);
-  }
-  100% {
-    transform: rotate(10deg);
-  }
+	0% {
+		transform: rotate(10deg);
+	}
+	50% {
+		transform: rotate(40deg);
+	}
+	100% {
+		transform: rotate(10deg);
+	}
 }
 @keyframes rot-down {
-  0% {
-    transform: rotate(-10deg);
-  }
-  50% {
-    transform: rotate(-40deg);
-  }
-  100% {
-    transform: rotate(-10deg);
-  }
+	0% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(-40deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
 }
 .joint {
-  width: 0.7em;
-  height: 0.7em;
-  border-radius: 50%;
-  background: #353535;
-  position: absolute;
-  top: 3.15em;
-  left: 45%;
+	width: 0.7em;
+	height: 0.7em;
+	border-radius: 50%;
+	background: #353535;
+	position: absolute;
+	top: 3.15em;
+	left: 45%;
 }
 
 .handle {
-  width: 8em;
-  height: 4em;
-  border-radius: 2em;
-  border: 1em solid #353535;
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
+	width: 8em;
+	height: 4em;
+	border-radius: 2em;
+	border: 1em solid #353535;
+	background: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
 }
 
 .blade {
-  width: 15em;
-  height: 1em;
-  position: absolute;
-  top: 3em;
-  left: 8em;
-  background: #bdc3c7;
-  border-radius: 0 0 1em 0;
+	width: 15em;
+	height: 1em;
+	position: absolute;
+	top: 3em;
+	left: 8em;
+	background: #bdc3c7;
+	border-radius: 0 0 1em 0;
 }
 .blade:before {
-  content: '';
-  width: 4em;
-  height: 1em;
-  background: #bdc3c7;
-  position: absolute;
-  top: 0;
-  left: -4em;
+	content: '';
+	width: 4em;
+	height: 1em;
+	background: #bdc3c7;
+	position: absolute;
+	top: 0;
+	left: -4em;
 }
 .blade:after {
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 2em 1em 2em;
-  border-color: transparent transparent #bdc3c7 transparent;
-  position: absolute;
-  top: -1em;
-  left: -2em;
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 2em 1em 2em;
+	border-color: transparent transparent #bdc3c7 transparent;
+	position: absolute;
+	top: -1em;
+	left: -2em;
 }
